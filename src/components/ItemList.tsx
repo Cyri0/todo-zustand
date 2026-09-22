@@ -1,6 +1,12 @@
+import { useItemStore } from "../store/useItemStore"
+
 const ItemList = () => {
+  const items = useItemStore((state) => state.items)
+
   return (
-    <div>ItemList</div>
+    <div>
+      {items.map(item => <p>{item}</p>)}
+    </div>
   )
 }
 
