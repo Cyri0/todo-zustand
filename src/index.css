@@ -11,3 +11,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.done{
+  text-decoration: line-through;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+}
