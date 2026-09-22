@@ -1,8 +1,9 @@
 import { create } from "zustand";
+import type { ItemType } from "../types/Item";
 
 type ItemStoreType = {
-    items: string[],
-    addItem: (item:string)=>void
+    items: ItemType[],
+    addItem: (item:ItemType)=>void
 }
 
 export const useItemStore = create<ItemStoreType>((set)=>({
